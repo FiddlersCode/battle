@@ -8,7 +8,7 @@ feature 'Attacking' do
   scenario 'reduce Player 2 LS by 1' do
     sign_in_and_play
     click_link 'Attack'
-    expect(page).not_to have_content 'Borg: 3 LS'
-    expect(page).to have_content 'Borg: 2 LS'
+    expect(page).not_to have_content 'Borg: 10 LS'
+    expect(page).to have_content 'Borg: 9 LS'
   end
 end
