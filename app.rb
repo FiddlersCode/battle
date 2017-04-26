@@ -26,5 +26,9 @@ class Battle < Sinatra::Base
     erb :attack
   end
 
+  get '/score' do
+   'Borg: 2 LS'
+ end
+
   run! if app_file == $0
 end
