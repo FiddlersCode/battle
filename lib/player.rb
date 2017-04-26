@@ -6,5 +6,8 @@ class Player
     @name = name
     @laser_strikes = laser_strikes
   end
-
+  
+  def sustain_damage
+    @laser_strikes -= 1
+  end
 end
