@@ -14,17 +14,4 @@ describe Player do
       expect(picard.laser_strikes).to eq described_class::DEFAULT_LASER_STRIKES
     end
   end
-
-  describe '#attack' do
-    it 'damages the player' do
-      expect(borg).to receive(:sustain_damage)
-      picard.attack(borg)
-    end
-  end
-
-  describe '#sustain_damage' do
-    it 'reduces the player\'s laser strikes' do
-      expect { picard.sustain_damage }.to change { picard.laser_strikes}.by(-1)
-    end
-  end
 end

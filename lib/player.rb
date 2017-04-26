@@ -7,11 +7,4 @@ class Player
     @laser_strikes = laser_strikes
   end
 
-  def attack(enemy)
-    enemy.sustain_damage
-  end
-
-  def sustain_damage
-    @laser_strikes -= 1
-  end
 end

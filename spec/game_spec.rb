@@ -11,7 +11,7 @@ describe '#game' do
       game.attack(player_2)
     end
   end
-
+  # 
   # describe '#sustain_damage' do
   #   it 'reduces the player\'s laser strikes' do
   #     expect { game.sustain_damage }.to change { game.laser_strikes}.by(-1)
